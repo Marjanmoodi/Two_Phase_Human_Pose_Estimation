@@ -1,7 +1,10 @@
 # Two phase human pose estimation (TPHPE)
 
 Human pose estimation(HPE) is a challenging problem in many computer vision tasks. Probabilistic graphical modeling is a common approach for HPE in which the human body parts are represented with a tree-based or loopy graph. Tree-based models are appealing due to their tractable exact inference while they suffer from the lack of constraints between symmetric parts. Double-counting, i.e. reporting one location for two symmetric parts of the body, is a common problem of tree-based graphical models. In this paper, we propose a two-phase human pose estimation (TPHPE) model which employs both tree-structured and loopy graphs in two subsequent phases. At the first phase, an initial pose is estimated using a tree-based model considering only kinematic relations. At the second phase, additional constraints are added to avoid the double-counted situations of the first phase. By fixing some parts of body, our model avoids loops in the second-phase’s graph and generates new pose candidates with an exact inference. Generated candidates are evaluated using a new score function with further constraints to select the final proposed configuration. Experimental results and analyses on LSP dataset clearly show the efficiency of the proposed model in resolving the double-counting problem of tree-based models.
-## Description
-The Code is original provided by http://www.stat.ucla.edu/~xianjie.chen/projects/pose_estimation/pose_estimation.html. We introduced a solution for double counting problem of tree-based graphical models and evaluating it on human pose estimation. The associated paper can be found here
+## Model
+![Model Structre](https://github.com/Marjanmoodi/Two_Phase_Human_Pose_Estimation/blob/master/result/Pix%20for%20Readme/model.png)
 ## Sample Output
+![Sample pose estimation results of Chen et al (up) and TPHPE (down)](https://github.com/Marjanmoodi/Two_Phase_Human_Pose_Estimation/blob/master/result/Pix%20for%20Readme/Output.png)
 
+## Description
+The Code is original provided by http://www.stat.ucla.edu/~xianjie.chen/projects/pose_estimation/pose_estimation.html. We introduced a solution for double counting problem of tree-based graphical models and evaluating it on human pose estimation. The associated paper can be found [here](https://github.com/Marjanmoodi/Two_Phase_Human_Pose_Estimation/blob/master/TPHPE_IET.pdf)
