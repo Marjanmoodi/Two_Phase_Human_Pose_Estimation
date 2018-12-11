@@ -6,5 +6,5 @@ Human pose estimation(HPE) is a challenging problem in many computer vision task
 ## Sample Output
 ![Sample pose estimation results of Chen et al (up) and TPHPE (down)](https://github.com/Marjanmoodi/Two_Phase_Human_Pose_Estimation/blob/master/result/Pix%20for%20Readme/Output.png)
 
-## Description
+## Reference
 The Code is original provided by http://www.stat.ucla.edu/~xianjie.chen/projects/pose_estimation/pose_estimation.html. We introduced a solution for double counting problem of tree-based graphical models and evaluating it on human pose estimation. The associated paper can be found [here](https://github.com/Marjanmoodi/Two_Phase_Human_Pose_Estimation/blob/master/TPHPE_IET.pdf)
